@@ -53,6 +53,8 @@ h3 {
 img {
     display: block;
     margin-top: 0.8rem;
+    max-width: 100%;
+    height: auto;
     border: 1px solid var(--border);
     border-radius: 10px;
     background: #f9fafb;
