@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joona Webisivu</title>
+    <style>
+        .internal-css-note {
+            border-left: 4px solid #166534;
+            padding-left: 0.75rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 style="color: #b91c1c;">Joona Websivu</h1>
+    </header>
+
+    <main>
+        <p class="internal-css-note">Tama teksti on muotoiltu internal CSS:lla.</p>
+
+        <section aria-labelledby="ws03-heading">
+            <h2 id="ws03-heading">WS03: Advanced CSS -harjoitukset</h2>
+
+            <h3>Task 1: CSS Transition</h3>
+            <button class="transition-button" type="button">Vie hiiri painikkeen paalle</button>
+
+            <h3>Task 2: CSS Animation</h3>
+            <div class="animation-track" aria-hidden="true">
+                <div class="animation-box"></div>
+            </div>
+
+            <h3>Task 3: CSS Pseudo-classes</h3>
+            <ul class="pseudo-list">
+                <li>Kohta 1</li>
+                <li>Kohta 2</li>
+                <li>Kohta 3</li>
+                <li>Kohta 4</li>
+            </ul>
+
+            <h3>Task 4: CSS Filters</h3>
+            <img src="../images/20250708_213946.jpg" alt="Esimerkkikuva filter-harjoitukseen" class="filter-image"
+                width="220" height="220">
+
+            <h3>Task 5: CSS Pseudo-elements</h3>
+            <blockquote class="quote">
+                Harjoittelu tekee varmaksi, ja pienilla askelilla web-kehitys muuttuu luontevaksi.
+            </blockquote>
+        </section>
+
+        <section aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading">Esittely</h2>
+            <p>
+                Moikka, olen Joona joka opiskelee parhaillaan tietojenkäsittelyä Laurean ammattikorkeakoulussa.
+                Opiskelujen ohessa työskentelen ohjaajana Rinnekodeilla. Vapaa-aika menee urheillessa ja perheen kanssa.
+            </p>
+            <img src="../images/20250708_213946.jpg" alt="Kesäiltaa viettämässä kalastuksen merkeissä" width="220"
+                height="220">
+        </section>
+
+        <div class="content-box">
+            <h3>Padding ja Margin -harjoitus</h3>
+            <p>Tama laatikko nayttaa, miten sisainen ja ulkoinen valitila toimivat kaytannossa.</p>
+        </div>
+
+        <section aria-labelledby="list-heading">
+            <h2 id="list-heading">Harrastukseni</h2>
+
+            <h3>Järjestetty lista</h3>
+            <ol>
+                <li>Kuntosali</li>
+                <li>Juokseminen</li>
+                <li>PC-pelaaminen</li>
+            </ol>
+
+            <h3>Järjestämätön lista</h3>
+            <ul>
+                <li>Urheilu</li>
+                <li>Aika perheen kanssa</li>
+                <li>Kalastus</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="link-heading">
+            <h2 id="link-heading">Suosikkisivusto</h2>
+            <p>
+                Vieraile sivulla
+                <a href="https://www.laurea.fi" target="_blank" rel="noopener noreferrer">Laurea-ammattikorkeakoulu</a>.
+            </p>
+        </section>
+
+        <section aria-labelledby="table-heading">
+            <h2 id="table-heading">Nykyiset kurssit</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kurssi</th>
+                        <th>Tila</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Verkkokehityksen perusteet</td>
+                        <td>Käynnissä</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading">Yhteydenottolomake</h2>
+            <p>Jos haluat olla yhteydessä, lähetä alle lyhyt viesti.</p>
+            <form action="https://formsubmit.co/joonajehkonen1996@gmail.com" method="post">
+                <input type="hidden" name="_subject" value="Uusi viesti Joona Websivu -lomakkeesta">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://jehkis.github.io/verkkosivu_teht-v-/kiitos.html">
+                <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off">
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="80" required>
+
+                <label for="email">Sähköposti:</label>
+                <input type="email" id="email" name="email" autocomplete="email" maxlength="120" required>
+
+                <label for="message">Viesti:</label>
+                <textarea id="message" name="message" rows="4" minlength="10" maxlength="1000" required></textarea>
+
+                <input type="submit" value="Lähetä">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tehty Laurea WS01 -kurssille | Joona | 2026</p>
+    </footer>
+</body>
+
+</html>
