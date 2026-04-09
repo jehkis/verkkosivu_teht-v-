@@ -1,9 +1,9 @@
 :root {
     --bg: #f5f7fb;
     --surface: #ffffff;
-    --text: #1f2937;
-    --accent: #0f766e;
-    --accent-strong: #115e59;
+    --text: #cbd5e1;
+    --accent: #fbbf24;
+    --accent-strong: #f59e0b;
     --ok: #166534;
     --danger: #991b1b;
     --border: #d1d5db;
@@ -18,7 +18,7 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text);
-    background-color: #e5e7eb;
+    background-color: #1f2937;
 }
 
 header,
@@ -47,7 +47,7 @@ h1,
 h2,
 h3 {
     margin-top: 0;
-    color: #0b3a53;
+    color: #2dd4bf;
 }
 
 h1 {
@@ -78,6 +78,10 @@ img {
 
 a {
     color: var(--accent);
+}
+
+a:hover {
+    color: var(--accent-strong);
 }
 
 table {
