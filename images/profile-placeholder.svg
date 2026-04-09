@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220" role="img" aria-labelledby="title desc">
+  <title id="title">Profile placeholder</title>
+  <desc id="desc">Simple portrait placeholder icon.</desc>
+  <rect width="220" height="220" fill="#ecfeff"/>
+  <circle cx="110" cy="85" r="38" fill="#99f6e4"/>
+  <path d="M42 195c8-42 30-62 68-62s60 20 68 62" fill="#5eead4"/>
+</svg>
