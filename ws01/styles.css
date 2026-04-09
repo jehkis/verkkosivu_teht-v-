@@ -1,7 +1,7 @@
 :root {
     --bg: #f5f7fb;
     --surface: #ffffff;
-    --text: #cbd5e1;
+    --text: #94a3b8;
     --accent: #fbbf24;
     --accent-strong: #f59e0b;
     --ok: #166534;
@@ -47,7 +47,7 @@ h1,
 h2,
 h3 {
     margin-top: 0;
-    color: #2dd4bf;
+    color: #14b8a6;
 }
 
 img {
