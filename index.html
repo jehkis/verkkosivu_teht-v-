@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self'; form-action 'self' https://formsubmit.co; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Joona Webisivu</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -75,14 +77,16 @@
             <form action="https://formsubmit.co/joonajehkonen1996@gmail.com" method="post">
                 <input type="hidden" name="_subject" value="Uusi viesti Joona Websivu -lomakkeesta">
                 <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://jehkis.github.io/verkkosivu_teht-v-/kiitos.html">
+                <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off">
                 <label for="name">Nimi:</label>
-                <input type="text" id="name" name="name" autocomplete="name" minlength="2" required>
+                <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="80" required>
 
                 <label for="email">Sähköposti:</label>
-                <input type="email" id="email" name="email" autocomplete="email" required>
+                <input type="email" id="email" name="email" autocomplete="email" maxlength="120" required>
 
                 <label for="message">Viesti:</label>
-                <textarea id="message" name="message" rows="4" minlength="10" required></textarea>
+                <textarea id="message" name="message" rows="4" minlength="10" maxlength="1000" required></textarea>
 
                 <input type="submit" value="Lähetä">
             </form>
