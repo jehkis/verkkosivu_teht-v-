@@ -1,96 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop 1 - My First HTML Page</title>
+    <title>Joona Webisivu</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Joona's Workshop 1 Page</h1>
-        <p>This page demonstrates basic HTML elements from Laurea WS01 tasks.</p>
+        <h1>Joona Websivu</h1>
+        <p>Moikka, olen Joona joka opiskelee parhaillaan tietojenkäsittelyä Laurean ammattikorkeakoulussa. Opiskelujen ohessa työskentelen ohjaajana Rinnekodeilla. Vapaa-aika menee urheillessa ja perheen kanssa.</p>
     </header>
 
     <main>
         <section aria-labelledby="about-me-heading">
-            <h2 id="about-me-heading">About Me</h2>
+            <h2 id="about-me-heading">Esittely</h2>
             <p>
-                I am studying web development and practicing how to build semantic and readable HTML pages.
-                My goal is to create clean structures before moving to more advanced CSS and JavaScript.
+                Opiskelen verkkokehitystä ja harjoittelen tekemään selkeitä ja semanttisia HTML-sivuja.
+                Tavoitteeni on rakentaa puhdas rakenne ennen kuin siirryn pidemmälle CSS:n ja JavaScriptin kanssa.
             </p>
-            <img src="images/profile-placeholder.svg" alt="Placeholder portrait illustration for Joona" width="220"
+            <img src="images/20250708_213946.jpg" alt="Kesäiltaa viettämässä kalastuksen merkeissä" width="220"
                 height="220">
         </section>
 
         <section aria-labelledby="list-heading">
-            <h2 id="list-heading">My Hobbies</h2>
+            <h2 id="list-heading">Harrastukseni</h2>
 
-            <h3>Ordered List</h3>
+            <h3>Järjestetty lista</h3>
             <ol>
-                <li>Gym training</li>
-                <li>Coding small web projects</li>
-                <li>Photography</li>
+                <li>Kuntosali</li>
+                <li>Juokseminen</li>
+                <li>PC-pelaaminen</li>
             </ol>
 
-            <h3>Unordered List</h3>
+            <h3>Järjestämätön lista</h3>
             <ul>
-                <li>Music</li>
-                <li>Gaming</li>
-                <li>Walking outdoors</li>
+                <li>Urheilu</li>
+                <li>Aika perheen kanssa</li>
+                <li>Kalastus</li>
             </ul>
         </section>
 
         <section aria-labelledby="link-heading">
-            <h2 id="link-heading">Favorite Website</h2>
+            <h2 id="link-heading">Suosikkisivusto</h2>
             <p>
-                Visit
-                <a href="https://www.laurea.fi" target="_blank" rel="noopener noreferrer">Laurea University of Applied
-                    Sciences</a>.
+                Vieraile sivulla
+                <a href="https://www.laurea.fi" target="_blank" rel="noopener noreferrer">Laurea-ammattikorkeakoulu</a>.
             </p>
         </section>
 
         <section aria-labelledby="table-heading">
-            <h2 id="table-heading">Current Courses</h2>
+            <h2 id="table-heading">Nykyiset kurssit</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Course</th>
-                        <th>Status</th>
+                        <th>Kurssi</th>
+                        <th>Tila</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Web Development Basics</td>
-                        <td>In Progress</td>
-                    </tr>
-                    <tr>
-                        <td>Programming Fundamentals</td>
-                        <td>In Progress</td>
-                    </tr>
-                    <tr>
-                        <td>Databases 1</td>
-                        <td>Planned</td>
+                        <td>Verkkokehityksen perusteet</td>
+                        <td>Käynnissä</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <section aria-labelledby="form-heading">
-            <h2 id="form-heading">Contact Form</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <h2 id="form-heading">Yhteydenottolomake</h2>
+            <p>Jos haluat olla yhteydessä, lähetä alle lyhyt viesti.</p>
+            <form action="#" method="post" novalidate>
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name" autocomplete="name" minlength="2" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Sähköposti:</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
 
-                <input type="submit" value="Submit">
+                <label for="message">Viesti:</label>
+                <textarea id="message" name="message" rows="4" minlength="10" required></textarea>
+
+                <input type="submit" value="Lähetä">
             </form>
         </section>
     </main>
+
+    <footer>
+        <p>Tehty Laurea WS01 -kurssille | Joona | 2026</p>
+    </footer>
 </body>
 
 </html>

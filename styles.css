@@ -3,6 +3,9 @@
     --surface: #ffffff;
     --text: #1f2937;
     --accent: #0f766e;
+    --accent-strong: #115e59;
+    --ok: #166534;
+    --danger: #991b1b;
     --border: #d1d5db;
 }
 
@@ -26,6 +29,10 @@ main {
 
 header {
     padding: 2rem 0 1rem;
+}
+
+main {
+    padding-bottom: 1rem;
 }
 
 section {
@@ -78,10 +85,31 @@ form {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
     padding: 0.55rem;
     border: 1px solid var(--border);
     border-radius: 8px;
+    font: inherit;
+    transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgb(15 118 110 / 0.15);
+}
+
+input:invalid,
+textarea:invalid {
+    border-color: var(--danger);
+}
+
+input:valid,
+textarea:valid {
+    border-color: var(--ok);
 }
 
 input[type="submit"] {
@@ -95,5 +123,42 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    filter: brightness(0.95);
+    background: var(--accent-strong);
+}
+
+footer {
+    width: min(920px, 92vw);
+    margin: 0 auto 2rem;
+    text-align: center;
+    color: #334155;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+    header {
+        padding: 1.4rem 0 0.8rem;
+    }
+
+    section {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        text-align: center;
+    }
 }
