@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data: https:; style-src 'self'; form-action 'self' https://formsubmit.co; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Joona Webisivu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Joona Websivu</h1>
+    </header>
+
+    <main>
+        <section aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading">Esittely</h2>
+            <p>
+                Moikka, olen Joona joka opiskelee parhaillaan tietojenkäsittelyä Laurean ammattikorkeakoulussa.
+                Opiskelujen ohessa työskentelen ohjaajana Rinnekodeilla. Vapaa-aika menee urheillessa ja perheen kanssa.
+            </p>
+            <img src="images/20250708_213946.jpg" alt="Kesäiltaa viettämässä kalastuksen merkeissä" width="220"
+                height="220">
+        </section>
+
+        <section aria-labelledby="list-heading">
+            <h2 id="list-heading">Harrastukseni</h2>
+
+            <h3>Järjestetty lista</h3>
+            <ol>
+                <li>Kuntosali</li>
+                <li>Juokseminen</li>
+                <li>PC-pelaaminen</li>
+            </ol>
+
+            <h3>Järjestämätön lista</h3>
+            <ul>
+                <li>Urheilu</li>
+                <li>Aika perheen kanssa</li>
+                <li>Kalastus</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="link-heading">
+            <h2 id="link-heading">Suosikkisivusto</h2>
+            <p>
+                Vieraile sivulla
+                <a href="https://www.laurea.fi" target="_blank" rel="noopener noreferrer">Laurea-ammattikorkeakoulu</a>.
+            </p>
+        </section>
+
+        <section aria-labelledby="table-heading">
+            <h2 id="table-heading">Nykyiset kurssit</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kurssi</th>
+                        <th>Tila</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Verkkokehityksen perusteet</td>
+                        <td>Käynnissä</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading">Yhteydenottolomake</h2>
+            <p>Jos haluat olla yhteydessä, lähetä alle lyhyt viesti.</p>
+            <form action="https://formsubmit.co/joonajehkonen1996@gmail.com" method="post">
+                <input type="hidden" name="_subject" value="Uusi viesti Joona Websivu -lomakkeesta">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://jehkis.github.io/verkkosivu_teht-v-/kiitos.html">
+                <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off">
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="80" required>
+
+                <label for="email">Sähköposti:</label>
+                <input type="email" id="email" name="email" autocomplete="email" maxlength="120" required>
+
+                <label for="message">Viesti:</label>
+                <textarea id="message" name="message" rows="4" minlength="10" maxlength="1000" required></textarea>
+
+                <input type="submit" value="Lähetä">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tehty Laurea WS01 -kurssille | Joona | 2026</p>
+    </footer>
+</body>
+
+</html>
