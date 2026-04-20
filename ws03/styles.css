@@ -189,12 +189,11 @@ p {
 .filter-image {
     filter: grayscale(100%) contrast(0.78) brightness(0.82);
     transition: filter 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
     margin-bottom: 1rem;
 }
 
 .filter-image:hover {
-    filter: grayscale(0%) contrast(1.06) brightness(1.05) saturate(1.2);
+    filter: none;
     transform: translateY(-2px);
 }
 
