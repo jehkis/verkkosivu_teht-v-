@@ -1,64 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS04 - Page Layout Techniques</title>
+    <title>WS04 - Sivun asettelutekniikat</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>WS04: Page Layout Techniques</h1>
-        <nav aria-label="Main navigation">
+        <h1>WS04: Sivun asettelutekniikat</h1>
+        <nav aria-label="Päävalikko">
             <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Johdanto</a></li>
+                <li><a href="#services">Ruudukko</a></li>
+                <li><a href="#contact">Yhteenveto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="about" aria-labelledby="about-heading">
-            <h2 id="about-heading">Task 1: Semantic Elements</h2>
+            <h2 id="about-heading">Tehtävä 1: Semanttiset elementit</h2>
             <p>
-                This section demonstrates semantic structure using header, main, section, nav, and footer elements.
+                Tämä osio näyttää, miten sivu rakennetaan semanttisesti header-, main-, section-, nav- ja footer-elementeillä.
             </p>
         </section>
 
         <section id="services" aria-labelledby="grid-heading">
-            <h2 id="grid-heading">Task 2: Grid Layout (2 Rows x 3 Columns)</h2>
+            <h2 id="grid-heading">Tehtävä 2: Grid-asettelu (2 riviä x 3 saraketta)</h2>
             <div class="grid-container">
-                <div class="grid-item">About me</div>
-                <div class="grid-item">Hobbies</div>
-                <div class="grid-item">Courses</div>
-                <div class="grid-item">Projects</div>
-                <div class="grid-item">Goals</div>
-                <div class="grid-item">Contact</div>
+                <div class="grid-item">Tietoa minusta</div>
+                <div class="grid-item">Harrastukset</div>
+                <div class="grid-item">Kurssit</div>
+                <div class="grid-item">Projektit</div>
+                <div class="grid-item">Tavoitteet</div>
+                <div class="grid-item">Yhteys</div>
             </div>
         </section>
 
         <section aria-labelledby="flex-heading">
-            <h2 id="flex-heading">Task 3: Flexbox Layout</h2>
+            <h2 id="flex-heading">Tehtävä 3: Flexbox-asettelu</h2>
             <div class="flex-container">
-                <div class="box">Box 1</div>
-                <div class="box">Box 2</div>
-                <div class="box">Box 3</div>
+                <div class="box">Laatikko 1</div>
+                <div class="box">Laatikko 2</div>
+                <div class="box">Laatikko 3</div>
             </div>
         </section>
 
         <section aria-labelledby="media-heading">
-            <h2 id="media-heading">Task 4: Media Queries</h2>
-            <div class="responsive-box">Resize the window to see the background color change</div>
+            <h2 id="media-heading">Tehtävä 4: Media queryt</h2>
+            <div class="responsive-box">Muuta ikkunan kokoa nähdäksesi taustavärin vaihtuvan</div>
         </section>
 
         <section id="contact" aria-labelledby="validate-heading">
-            <h2 id="validate-heading">Task 5: Validation</h2>
+            <h2 id="validate-heading">Tehtävä 5: Validointi</h2>
             <p>
-                HTML and CSS are written to validate cleanly. Use the W3C Validation extension in VS Code and check
-                the Problems panel for any warnings or errors.
+                HTML ja CSS on kirjoitettu niin, että ne validoituvat siististi. Käytä VS Codessa W3C Validation
+                -laajennusta ja tarkista mahdolliset varoitukset tai virheet Problems-paneelista.
             </p>
         </section>
     </main>
