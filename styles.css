@@ -1,8 +1,8 @@
 :root {
     --bg: #070b14;
     --bg-soft: #0d1424;
-    --surface: rgba(12, 18, 32, 0.76);
-    --surface-strong: rgba(16, 24, 44, 0.9);
+    --surface: rgba(12, 18, 32, 0.56);
+    --surface-strong: rgba(16, 24, 44, 0.74);
     --surface-border: rgba(148, 163, 184, 0.18);
     --text: #cbd5e1;
     --text-strong: #f8fafc;
@@ -28,7 +28,7 @@ body {
     line-height: 1.65;
     color: var(--text);
     background:
-        linear-gradient(180deg, rgba(5, 8, 20, 0.45) 0%, rgba(9, 17, 31, 0.45) 100%),
+        linear-gradient(180deg, rgba(5, 8, 20, 0.28) 0%, rgba(9, 17, 31, 0.28) 100%),
         url("images/20250722_141517.jpg") center / cover no-repeat fixed;
 }
 
@@ -108,7 +108,7 @@ a:hover {
 .panel {
     position: relative;
     border: 1px solid var(--surface-border);
-    background: linear-gradient(180deg, rgba(20, 28, 46, 0.82), rgba(10, 17, 30, 0.82));
+    background: linear-gradient(180deg, rgba(20, 28, 46, 0.66), rgba(10, 17, 30, 0.66));
     box-shadow: var(--shadow);
     backdrop-filter: blur(18px);
 }
@@ -299,7 +299,7 @@ a:hover {
 .workshop-card {
     border-radius: 22px;
     border: 1px solid rgba(148, 163, 184, 0.15);
-    background: rgba(15, 23, 42, 0.5);
+    background: rgba(15, 23, 42, 0.34);
     padding: 1rem;
 }
 
@@ -379,7 +379,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     min-width: 320px;
-    background: rgba(15, 23, 42, 0.52);
+    background: rgba(15, 23, 42, 0.38);
 }
 
 th,
