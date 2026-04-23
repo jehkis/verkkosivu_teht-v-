@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS04 - Page Layout Techniques</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>WS04: Page Layout Techniques</h1>
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">Task 1: Semantic Elements</h2>
+            <p>
+                This section demonstrates semantic structure using header, main, section, nav, and footer elements.
+            </p>
+        </section>
+
+        <section id="services" aria-labelledby="grid-heading">
+            <h2 id="grid-heading">Task 2: Grid Layout (2 Rows x 3 Columns)</h2>
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+            </div>
+        </section>
+
+        <section aria-labelledby="flex-heading">
+            <h2 id="flex-heading">Task 3: Flexbox Layout</h2>
+            <div class="flex-container">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+            </div>
+        </section>
+
+        <section aria-labelledby="media-heading">
+            <h2 id="media-heading">Task 4: Media Queries</h2>
+            <div class="responsive-box">Resize the window to see the background color change</div>
+        </section>
+
+        <section id="contact" aria-labelledby="validate-heading">
+            <h2 id="validate-heading">Task 5: Validation</h2>
+            <p>
+                HTML and CSS are written to validate cleanly. Use the W3C Validation extension in VS Code and check
+                the Problems panel for any warnings or errors.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2026 | Laurea WS04 | Joona</p>
+    </footer>
+</body>
+
+</html>
