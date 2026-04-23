@@ -28,7 +28,7 @@ body {
     line-height: 1.65;
     color: var(--text);
     background:
-        linear-gradient(180deg, rgba(5, 8, 20, 0.62) 0%, rgba(9, 17, 31, 0.62) 100%),
+        linear-gradient(180deg, rgba(5, 8, 20, 0.45) 0%, rgba(9, 17, 31, 0.45) 100%),
         url("images/20250722_141517.jpg") center / cover no-repeat fixed;
 }
 
