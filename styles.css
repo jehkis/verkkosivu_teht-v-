@@ -28,10 +28,8 @@ body {
     line-height: 1.65;
     color: var(--text);
     background:
-        radial-gradient(circle at top left, rgba(167, 139, 250, 0.18), transparent 28%),
-        radial-gradient(circle at 85% 8%, rgba(34, 211, 238, 0.16), transparent 26%),
-        radial-gradient(circle at 50% 100%, rgba(245, 158, 11, 0.10), transparent 24%),
-        linear-gradient(180deg, #050814 0%, #09111f 45%, #050814 100%);
+        linear-gradient(180deg, rgba(5, 8, 20, 0.62) 0%, rgba(9, 17, 31, 0.62) 100%),
+        url("images/20250722_141517.jpg") center / cover no-repeat fixed;
 }
 
 body::before,

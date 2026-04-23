@@ -1,0 +1,29 @@
+Osio;Arvo;Kaava/selite
+Oletukset;;
+Kappalehinta;5;eur/kpl
+Muuttuva kustannus / kuppi;2;eur/kpl
+Kiinteät kustannukset / vuosi;10000;eur
+;;
+Tämä vuosi;;
+Myyntimäärä;5000;kpl
+Liikevaihto;=B3*B8;hinta * määrä
+Muuttuvat kustannukset;=B4*B8;muuttuva kustannus * määrä
+Katetuotto;=B9-B10;liikevaihto - muuttuvat kustannukset
+Tulos;=B11-B5;katetuotto - kiinteät kustannukset
+;;
+Ensi vuosi (suunnitelma);;
+Myyntimäärä;6000;kpl
+Liikevaihto;=B3*B15;hinta * määrä
+Muuttuvat kustannukset;=B4*B15;muuttuva kustannus * määrä
+Katetuotto;=B16-B17;liikevaihto - muuttuvat kustannukset
+Tulos;=B18-B5;katetuotto - kiinteät kustannukset
+;;
+Ensi vuoden vaihtoehto (6600 kpl, hinta 4,6);;
+Kappalehinta;4,6;eur/kpl
+Myyntimäärä;6600;kpl
+Liikevaihto;=B22*B23;hinta * määrä
+Muuttuvat kustannukset;=B4*B23;muuttuva kustannus * määrä
+Katetuotto;=B24-B25;liikevaihto - muuttuvat kustannukset
+Kiinteät kustannukset;=B5;eur
+Tulos;=B26-B27;katetuotto - kiinteät kustannukset
+Katetuotto-%;=B26/B24;muotoile prosentiksi
