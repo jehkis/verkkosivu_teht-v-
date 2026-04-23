@@ -30,6 +30,7 @@
 
         <section aria-labelledby="task3-heading">
             <h2 id="task3-heading">Tehtävä 3: Mediakyselyt</h2>
+            <button class="demo-toggle" type="button" data-target="media-query-box">Näytä mobiilitila</button>
             <div class="media-query-box">Muuta ikkunan kokoa nähdäksesi taustavärin vaihtuvan.</div>
         </section>
 
@@ -52,6 +53,8 @@
                 Testaa sivu selaimen kehittäjätyökaluilla eri näyttöleveyksillä ja varmista, että asettelu,
                 kuva ja navigointi mukautuvat oikein.
             </p>
+            <button class="demo-toggle" type="button" data-target="task5-check">Merkitse testattu</button>
+            <p class="test-status" id="task5-check" aria-live="polite">Testaus: ei vielä merkitty.</p>
         </section>
     </main>
 
@@ -67,6 +70,29 @@
             toggle.addEventListener('click', () => {
                 const open = navList.classList.toggle('is-open');
                 toggle.setAttribute('aria-expanded', String(open));
+                toggle.textContent = open ? '✕ Sulje' : '☰ Valikko';
+            });
+        }
+
+        const demoToggle = document.querySelector('.demo-toggle[data-target="media-query-box"]');
+        const mediaBox = document.querySelector('.media-query-box');
+
+        if (demoToggle && mediaBox) {
+            demoToggle.addEventListener('click', () => {
+                const isSmall = mediaBox.classList.toggle('is-small');
+                mediaBox.classList.toggle('is-large', !isSmall);
+                demoToggle.textContent = isSmall ? 'Näytä desktop-tila' : 'Näytä mobiilitila';
+            });
+        }
+
+        const testButton = document.querySelector('.demo-toggle[data-target="task5-check"]');
+        const testStatus = document.querySelector('#task5-check');
+
+        if (testButton && testStatus) {
+            testButton.addEventListener('click', () => {
+                const tested = testStatus.classList.toggle('is-tested');
+                testStatus.textContent = tested ? 'Testaus: valmis.' : 'Testaus: ei vielä merkitty.';
+                testButton.textContent = tested ? 'Peru merkitseminen' : 'Merkitse testattu';
             });
         }
     </script>
