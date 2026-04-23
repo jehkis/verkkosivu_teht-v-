@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS05 - Responsiivinen suunnittelu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>WS05: Responsiivinen suunnittelu</h1>
+        <p>Tällä sivulla harjoitellaan responsiivista asettelua, kuvia, mediakyselyitä ja navigointia.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="task1-heading">
+            <h2 id="task1-heading">Tehtävä 1: Responsiivinen asettelu</h2>
+            <div class="responsive-container">
+                <div class="column">Sarake 1</div>
+                <div class="column">Sarake 2</div>
+            </div>
+        </section>
+
+        <section aria-labelledby="task2-heading">
+            <h2 id="task2-heading">Tehtävä 2: Responsiivinen kuva</h2>
+            <img src="../images/20250708_213946.jpg" alt="Responsiivinen kuva" class="responsive-image" width="640" height="640">
+        </section>
+
+        <section aria-labelledby="task3-heading">
+            <h2 id="task3-heading">Tehtävä 3: Mediakyselyt</h2>
+            <div class="media-query-box">Muuta ikkunan kokoa nähdäksesi taustavärin vaihtuvan.</div>
+        </section>
+
+        <section aria-labelledby="task4-heading">
+            <h2 id="task4-heading">Tehtävä 4: Responsiivinen navigointipalkki</h2>
+            <nav class="responsive-nav" aria-label="Responsiivinen valikko">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">☰ Valikko</button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#task1-heading">Asettelu</a></li>
+                    <li><a href="#task2-heading">Kuva</a></li>
+                    <li><a href="#task3-heading">Mediakyselyt</a></li>
+                    <li><a href="#task5-heading">Testaus</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section aria-labelledby="task5-heading">
+            <h2 id="task5-heading">Tehtävä 5: Vahvista responsiivinen suunnittelu</h2>
+            <p>
+                Testaa sivu selaimen kehittäjätyökaluilla eri näyttöleveyksillä ja varmista, että asettelu,
+                kuva ja navigointi mukautuvat oikein.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tehty Laurea WS05 -kurssille | Joona | 2026</p>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.responsive-nav .nav-list');
+
+        if (toggle && navList) {
+            toggle.addEventListener('click', () => {
+                const open = navList.classList.toggle('is-open');
+                toggle.setAttribute('aria-expanded', String(open));
+            });
+        }
+    </script>
+</body>
+
+</html>
