@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS06 - Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-semibold" href="#top">WS06 Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#task1">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#task2">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#task5">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="top">
+        <section class="hero-section py-5">
+            <div class="container py-3">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <p class="text-uppercase text-info fw-semibold letter-space mb-2">Workshop 6</p>
+                        <h1 class="display-5 fw-bold text-white mb-3">Bootstrapilla nopeasti responsiivinen sivu</h1>
+                        <p class="lead text-light-emphasis mb-4">
+                            Tämä harjoitus kokoaa navbarin, gridin, napit, kortin ja alertin yhteen sivuun.
+                            Bootstrap hoitaa rungon, pieni oma CSS viimeistelee ilmeen.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <button class="btn btn-primary btn-lg">Primary</button>
+                            <button class="btn btn-secondary btn-lg">Secondary</button>
+                            <button class="btn btn-success btn-lg">Success</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="hero-card p-4 rounded-4 shadow-lg">
+                            <h2 class="h4 mb-3 text-white">Bootstrapin perusidea</h2>
+                            <p class="mb-0 text-light-emphasis">
+                                Valmiit komponentit, grid-järjestelmä ja utility-luokat nopeuttavat
+                                responsiivisen käyttöliittymän rakentamista merkittävästi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="task1" class="py-5">
+            <div class="container">
+                <div class="section-heading mb-4">
+                    <p class="section-kicker">Task 1</p>
+                    <h2>Responsive Navbar</h2>
+                </div>
+                <p class="mb-0">Yläpalkki muuttuu pienillä näytöillä hamburger-valikoksi Bootstrapin collapse-komponentilla.</p>
+            </div>
+        </section>
+
+        <section id="task2" class="py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="section-heading mb-4">
+                    <p class="section-kicker">Task 2</p>
+                    <h2>Bootstrap Grid Layout</h2>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4 col-12">
+                        <div class="feature-box h-100">Column 1</div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="feature-box h-100">Column 2</div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="feature-box h-100">Column 3</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="section-heading mb-4">
+                    <p class="section-kicker">Task 3</p>
+                    <h2>Bootstrap Buttons</h2>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-outline-info">Outline Info</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="section-heading mb-4">
+                    <p class="section-kicker">Task 4</p>
+                    <h2>Bootstrap Card</h2>
+                </div>
+                <div class="card shadow-sm border-0 card-width">
+                    <img src="../images/20250708_213946.jpg" class="card-img-top" alt="Kuva iltavalaistuksessa olevasta järvimaisemasta">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is a simple card example using Bootstrap.</p>
+                        <a href="#task5" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="task5" class="py-5">
+            <div class="container">
+                <div class="section-heading mb-4">
+                    <p class="section-kicker">Task 5</p>
+                    <h2>Bootstrap Alert</h2>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    This is a warning alert—check it out!
+                </div>
+                <div class="alert alert-info" role="alert">
+                    You can swap the alert variant to success, danger, or info depending on the feedback you want.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4">
+        <div class="container text-center text-secondary">
+            <p class="mb-0">Tehty Laurea WS06 -kurssille | Joona | 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
